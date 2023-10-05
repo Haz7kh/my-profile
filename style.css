@@ -47,7 +47,7 @@ nav {
   align-items: center;
   justify-content: flex-start;
   min-height: 100vh;
-  margin: 50px;
+  margin-top: 130px;
 }
 
 .profile {
@@ -98,22 +98,27 @@ button:hover {
 }
 
 /* **********about me section*************** */
+.about-section {
+  /* Apply styles to the entire "About Me" section */
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
 
 .about-container {
   display: grid;
-  background-color: #ead7bb;
-}
-.about h3 {
-  text-decoration: underline;
-}
-.about img {
-  max-height: 350px;
-  float: left;
-  border-radius: 50%;
+  grid-template-columns: 2fr 2fr; /* Adjust column widths as needed */
+  gap: 50px;
+  align-items: center;
   margin: 20px;
-  justify-content: center;
 }
-.about p {
-  font-size: 16px;
+
+.about-left img {
+  max-width: 100%;
+}
+
+.about-right {
   text-align: center;
+  padding: 40px;
+  margin-left: 20px;
 }
